@@ -15,9 +15,20 @@ print('=========================================================================
 
 
 # define the template for the 'game' object (customized data class)
+class C4Model:
 
-# initialize new game
+    def __init__(game):
+        game.p1 = 'player 1'
+        game.p2 = 'player 2'
+        game.rows = [
+            ['','','','','','',''],
+            ['','','','','','',''],
+            ['','','','','','',''],
+            ['','','','','','',''],
+            ['','','','','','',''],
+            ['','','','','','',''],
+            ['','','','','','','']
+        ]
 
-# listen for player inputs and such
-
-# give lily a hug
+    def print_rows():
+        print('here are the rows lol')
