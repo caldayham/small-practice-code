@@ -1,2 +1,14 @@
-# small-practice-code
-A repository of various small practice coding projects to keep my brain excited and learning!
+# Python Connect Four (simple gui)  
+
+```
+author: Cal Day [calday.one]
+date: 2022-12-15
+```
+<br/>
+<br/>
+
+This is my attempt at creating a simple game of connect four in python.
+
+Have an amazing day,
+Cal
+ 
