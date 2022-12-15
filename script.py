@@ -19,3 +19,5 @@ print('=========================================================================
 # initialize new game
 
 # listen for player inputs and such
+
+# give lily a hug
