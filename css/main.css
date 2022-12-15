@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    height: 100vh;
+    width: 100vw;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+ height: 100%;
+ width: 100%;
+
+ border: 4px dashed rgb(56, 59, 255);
+ overflow: hidden;
+}
+
+header {
+    height: 80px;
+    padding-left: 15px;
+}
+
+main {
+    height: 100%;
+}
+
+canvas {
+    height: calc(100% - 80px);
+    width: 100%;
+
+    border-top: 4px dashed rgb(56, 59, 255);
+}
