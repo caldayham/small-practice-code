@@ -1,14 +1,11 @@
-# Python Connect Four (simple gui)  
+# Small Practice Code  
 
 ```
-author: Cal Day [calday.one]
-date: 2022-12-15
+author: calday.one
 ```
-<br/>
-<br/>
 
-This is my attempt at creating a simple game of connect four in python.
+A repository of various small practice coding projects to keep my brain excited and learning!
 
-Have an amazing day,
-Cal
- 
+<a href="https://github.com/caldayone/small-practice-code">screen bisecting curor</a>  
+<a href="https://github.com/caldayone/small-practice-code">harry potter practice node.js api</a>  
+<a href="https://github.com/caldayone/small-practice-code">simple python connect 4</a>  
