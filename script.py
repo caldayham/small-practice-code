@@ -30,5 +30,36 @@ class C4Model:
             ['','','','','','','']
         ]
 
-    def print_rows():
+    # function that takes the boad array of arrays and prints the board as a string that is readable in the console
+    def __str__():
         print('here are the rows lol')
+
+    # function that returns weather or not the game is still in play
+    def __bool__():
+        return False
+
+    # function that allows one of the players to drop their tile by specifying a number 1-7 for the column
+    def drop(player):
+        print('cool')
+    
+    # function that returns the board as an array of 6 items representing the rows, with each item being its own array of 7 items representing individual slots
+    def board():
+        print('cool')
+
+    # function that returns a hash table (dict) with two items mapping the player numbers (1 & 2) to their respective names / colors
+    def player_names():
+        player_dict = {
+            1: {
+                'name': 'player 1',
+                'color': 'blue'
+            },
+            2: {
+                'name': 'player 2',
+                'color': 'orange'
+            }
+        }
+        return player_dict
+
+    # function that returns the winner of the game, or 'none' if the game has not ended or has ended in a draw
+    def winner():
+        return None
