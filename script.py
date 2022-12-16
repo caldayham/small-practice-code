@@ -30,17 +30,27 @@ class C4Model:
             ['','','','','','','']
         ]
         self.isComplete = False
+        self.currentPlayer = 'player 1'
+        self.lastMove = ''
 
     # function that takes the board array of arrays and prints the board as a string that is readable in the console
     def printBoard(self):
-        return 'hello'
-
+        print('\n 0 1 2 3 4 5 6\n', end="")
+        for row in self.gameBoard:
+            print('|', end="")
+            for slot in row:
+                if (slot == ''):
+                    print('', end='_|')
+                else:
+                    print(slot, end='|')
+            print('')
+            
     # function that returns weather or not the game is still in play
     def __bool__(self):
         return False
 
     # function that allows one of the players to drop their tile by specifying a number 1-7 for the column
-    def drop(self):
+    def drop(self, move):
         print('cool')
     
     # function that returns the board as an array of 6 items representing the rows, with each item being its own array of 7 items representing individual slots
@@ -74,11 +84,19 @@ class C4Model:
 # initialize a new game 'g' based on the connect 4 model above
 g = C4Model(p1='red', p2='orange')
 
-remainingSpaces = 6*7
-while (remainingSpaces >0):
-    g.printBoard
-    input('')
-else:
-    print('there are no remaining spaces!')
-    exit
+
+while (g.isComplete == False):
+    g.printBoard()
+    print("\n" + g.currentPlayer + " make your move")
+    move = input()
+
+    # run the drop method
+    g.drop(move)
+
+
+    if (g.currentPlayer == 'player 1'):
+        g.currentPlayer = 'player 2'
+    else:
+        g.currentPlayer = 'player 1'
+
 
